@@ -45,5 +45,14 @@ public class Belt extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
+    public void In(){
+    	motor.set(0.5);
+    }
+    public void Out(){
+    	motor.set(-0.5);
+    }
+    public void Stop(){
+    	motor.set(0.0);
+    }
 }
 
